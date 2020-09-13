@@ -1,8 +1,8 @@
 const firestoreService = require("firestore-export-import");
 const serviceAccount = require("./serviceAccountKey.json");
 
-const databaseURL = "DB_URL";
+const databaseURL = "https://def-hacks-learn.firebaseio.com";
 
-firestoreService.initalizeApp(serviceAccount, databaseURL);
+firestoreService.initializeApp(serviceAccount, databaseURL);
 
 firestoreService.restore("data.json");
